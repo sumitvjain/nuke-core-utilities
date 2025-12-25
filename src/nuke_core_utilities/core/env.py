@@ -31,7 +31,7 @@ def get_threads():
     Return :
         thread_value : int
     """
-    thread_value = nuke.get('threads')
+    thread_value = nuke.env.get('threads')
 
     return thread_value
 
