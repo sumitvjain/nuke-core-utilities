@@ -38,12 +38,12 @@ def create_read(path, colorspace=None):
     """
     Create a Read node with file path and optional colorspace.
 
-    Args:
-        path (str): File path to read (image sequence or single file).
-        colorspace (str, optional): Colorspace name (e.g. 'ACES - ACEScg').
+    Params:
+        path : File path (str)
+        colorspace : str
 
     Returns:
-        nuke.Node: Created Read node, or None if creation fails.
+        read : read node object or None
     """
     if not path:
         nuke.warning("create_read: Empty path provided")

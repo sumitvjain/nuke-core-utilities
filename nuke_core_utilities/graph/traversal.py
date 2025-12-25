@@ -3,7 +3,11 @@ import nuke
 
 def get_upstream_nodes(node, collected=None):
     """
-    Recursively collect upstream nodes
+    Param:
+        node : node object/instance
+        collected: nodes objects(set)
+    Returns:
+        collected_lst : dependencies nodes list
     """
     if collected is None:
         collected = set()
@@ -14,50 +18,9 @@ def get_upstream_nodes(node, collected=None):
             collected.add(input_node)
             get_upstream_nodes(input_node, collected)
 
-    return list(collected)
+    collected_lst = list(collected)
+
+    return collected_lst
 
 
-def get_downstream_nodes(node):
-    """
-    Return all downstream (dependent) nodes of the given node.
 
-    Args:
-        node (nuke.Node): Starting node.
-
-    Returns:
-        list[nuke.Node]: All dependent nodes (unique, in graph order).
-    """
-    if not node:
-        return []
-
-    downstream = []
-    visited = set()
-
-    def walk_downstrea(n):
-        for dep in n.dependent(nuke.INPUTS | nuke.HIDDEN_INPUTS):
-            if dep not in visited:
-                visited.add(dep)
-                downstream.append(dep)
-                walk_downstrea(dep)
-
-    walk_downstrea(node)
-    return downstream
-
-
-def get_upstream_nodes_name(node):
-    """
-    Docstring for get_upstream_nodes_name
-    
-    :param node: Node object/instance
-    """
-    return [n.name() for n in get_upstream_nodes(node)]
-    
-
-def get_downstream_nodes_name(node):
-    """
-    Docstring for get_downstream_nodes_name
-    
-    :param node: Node object/instance
-    """
-    
-    return [n.name() for n in get_downstream_nodes(node)]
