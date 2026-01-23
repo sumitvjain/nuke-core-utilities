@@ -115,7 +115,7 @@ from typing import Dict, List, Optional, Tuple, Union, Any
 import logging
 
 # Import constants
-from . import constants
+# from . import constants
 
 # Setup logging
 logger = logging.getLogger(__name__)
@@ -592,21 +592,18 @@ class NukeEnvironment:
         # Platform-specific default locations
         if platform.system() == "Windows":
             defaults = [
-                r"C:\Program Files\Nuke13.0v5\Nuke13.0.exe",
-                r"C:\Program Files\Nuke13.0\Nuke13.0.exe",
-                r"C:\Program Files\Nuke12.0\Nuke12.0.exe",
+                r"C:\Program Files\Nuke15.1v3\Nuke15.1.exe",
+                r"C:\Program Files\Nuke15.1\Nuke15.1.exe",
             ]
         elif platform.system() == "Darwin":  # macOS
             defaults = [
-                "/Applications/Nuke13.0v5/Nuke13.0v5.app/Contents/MacOS/Nuke13.0v5",
-                "/Applications/Nuke13.0/Nuke13.0.app/Contents/MacOS/Nuke13.0",
-                "/Applications/Nuke12.0/Nuke12.0.app/Contents/MacOS/Nuke12.0",
+                "/Applications/Nuke15.1v3/Nuke15.1v3.app/Contents/MacOS/Nuke15.1v3",
+                "/Applications/Nuke15.1/Nuke15.1.app/Contents/MacOS/Nuke15.1",
             ]
         else:  # Linux
             defaults = [
-                "/usr/local/Nuke13.0v5/Nuke13.0v5",
-                "/usr/local/Nuke13.0/Nuke13.0",
-                "/usr/local/Nuke12.0/Nuke12.0",
+                "/usr/local/Nuke15.1v3/Nuke15.1v3",
+                "/usr/local/Nuke15.1/Nuke15.1",
             ]
         
         for default in defaults:

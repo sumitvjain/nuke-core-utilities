@@ -2,9 +2,7 @@ import os
 import sys
 from pathlib import Path
 
-# ============================================================================
-# FILE SYSTEM & PATHS
-# ============================================================================
+
 
 # Directory names
 DIR_SCRIPTS = "scripts"
@@ -380,7 +378,6 @@ CUSTOM_DEADLINE = "deadline"
 CUSTOM_PRIORITY = "priority"
 CUSTOM_REVIEW = "needs_review"
 
-
 # Allowed file operations
 ALLOWED_READ_EXT = [EXT_NK, EXT_PY, EXT_JSON, EXT_TXT, EXT_XML]
 ALLOWED_WRITE_EXT = [EXT_NK, EXT_PY, EXT_JSON, EXT_TXT, EXT_XML, EXT_LOG]
@@ -409,8 +406,11 @@ def get_color_hex(color_int):
     return f"0x{color_int:08X}"
 
 
-def get_resolution_tuple(res_str):
-    """Convert resolution string to (width, height) tuple."""
+def get_resolution_tuple(res_str) -> tuple[int, int]:
+    """
+    Convert resolution string to (width, height) tuple.
+    if x not in res_str then will return (1920, 1080)
+    """
     if "x" in res_str:
         w, h = res_str.split("x")
         return (int(w), int(h))
@@ -436,3 +436,5 @@ def check_deprecated(constant_name):
             DeprecationWarning,
             stacklevel=2
         )
+
+        

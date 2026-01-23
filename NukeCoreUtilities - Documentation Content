@@ -1,0 +1,163 @@
+Nuke Core Utilities - Module-Wise Speaking Scripts
+🎬 VIDEO 1: INTRODUCTION - COMPLETE PIPELINE TOOLKIT
+
+CORE MODULES:
+┌─────────────────────────────────────┐
+│ 1. CORE - Environment & Logging│
+│ 2. DATA - Cache & Metadata │
+│ 3. GRAPH - Connections & Layout │
+│ 4. NODES - Node Operations │
+│ 5. PROJECT - Context & Paths │
+│ 6. RENDER - Render Management │
+│ 7. SELECTION - Selection Tools │
+│ 8. UTILS - Validation & Knobs │
+└─────────────────────────────────────┘
+
+
+Resources:
+• GitHub: github.com/your-org/nuke-core-utilities
+• Docs: docs.nukecoreutilities.com
+• Issues: github.com/your-org/nuke-core-utilities/issues
+
+
+
+Overview
+Introduction
+"Building professional Nuke tools is hard. Every developer faces the same problems: 
+repetitive boilerplate code, inconsistent error handling, and hours spent debugging. 
+Nuke Core Utilities solves this. 
+It's a complete Python package with eight specialized modules that work together seamlessly. 
+Whether you're automating simple tasks or building complex pipeline tools,
+this package gives you production-ready solutions immediately."
+
+
+The Core Module - Foundation
+"The Core module is your foundation. It automatically detects everything: your system, 
+Nuke version, available memory, and project context. It provides professional logging integrated with 
+Nuke's Script Editor - colored output, file rotation, and structured JSON logs. All your constants and 
+configurations are centralized here. Change a color scheme once, and all your tools update automatically. 
+No more rewriting the same environment checks."
+
+
+Data & Graph Modules - Performance & Intelligence
+"The Data module handles caching intelligently. Expensive operations like graph analysis are cached automatically, 
+making your tools significantly faster. It manages metadata and file operations with backups and validation."
+
+"The Graph module understands node connections. It can analyze complex graphs, find paths between nodes, 
+detect circular dependencies, and automatically organize messy scripts with hierarchical, radial, 
+or grid layouts. No more manual node dragging."
+
+
+Nodes Module - Smart Operations
+"The Nodes module transforms how you work with nodes. Create nodes with templates, grids, or 
+groups in one intelligent call - not multiple steps. Delete nodes safely with connection cleanup and 
+automatic backups. Modify nodes with professional alignment, distribution, and automatic coloring by node type. 
+Query nodes with sophisticated search - by class, knob values, position, or complex patterns."
+
+
+Project & Render Modules - Production Ready
+"The Project module brings production awareness. It manages show/shot/task context automatically, 
+resolves paths using templates, and handles version control. Set up complete shot structures with one command."
+
+"The Render module provides professional render management. Queue multiple renders with priorities, 
+monitor progress, validate write nodes, and use output templates for consistent results. 
+Perfect for batch processing and render farm integration."
+
+
+Utilities & Integration
+"The Utilities module includes specialized tools: validation frameworks to catch issues early, 
+knob management for custom nodes, callback systems for event-driven programming, 
+and isolation tools for focusing on complex scripts."
+
+"What makes this powerful is integration. All modules work together. Environment detection informs node operations. 
+Caching speeds up graph analysis. Project context guides path resolution. 
+You're not using isolated tools - you're building on a complete, cohesive system."
+
+
+Benefits & Getting Started
+"With Nuke Core Utilities, you save development time, ensure consistency across tools, 
+get better debugging with structured logs, and build professional tools from day one. 
+Installation is simple - pip install into Nuke's Python. Documentation and examples are included. 
+Start building better Nuke tools today, with the foundation already done for you."
+
+
+Key Points by Module (Quick Reference)
+
+
+CORE MODULE
+
+Automatic environment detection
+
+Professional logging with Nuke integration
+
+Centralized configuration
+
+Essential foundation for all tools
+
+
+DATA MODULE
+
+Intelligent caching for performance
+
+Metadata management
+
+Robust file operations with backups
+
+Speed up complex operations
+
+
+GRAPH MODULE
+
+Connection analysis and management
+
+Automatic layout algorithms
+
+Graph traversal and cycle detection
+
+Organize messy scripts automatically
+
+
+NODES MODULE
+
+Intelligent creation with templates
+
+Safe deletion with cleanup
+
+Advanced modification and styling
+
+Sophisticated querying and analysis
+
+
+PROJECT MODULE
+
+Context management for shows/shots/tasks
+
+Template-based path resolution
+
+Automated version control
+
+Production pipeline awareness
+
+
+RENDER MODULE
+
+Queue system for multiple renders
+
+Write node templates and validation
+
+Progress tracking and resource management
+
+Professional render pipeline
+
+
+UTILITIES MODULE
+
+Validation framework for quality control
+
+Knob management for custom nodes
+
+Callback system for event-driven tools
+
+Isolation tools for complex scripts
+
+
