@@ -61,6 +61,8 @@ class NukeCache:
         if cls._instance is None:
             cls._instance = super().__new__(cls)
             cls._instance._initialized = False
+            print("cls._instance ---- ", cls._instance)
+        print("cls._instance ===== ", cls._instance)
         return cls._instance
     
     def __init__(self):
@@ -75,7 +77,7 @@ class NukeCache:
             self.misses = 0
             
             # Get cache directory from environment
-            env = get_env()
+            env = "get_env"()
             cache_dir = env.get_path('project_temp', Path.home() / '.nuke_cache')
             self.cache_dir = Path(cache_dir) / 'data_cache'
             self.cache_dir.mkdir(parents=True, exist_ok=True)

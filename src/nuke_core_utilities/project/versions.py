@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Any
 import nuke
 
-from ..core.logging_utils import get_logger, TimerContext
+from ..core.logging_utils import get_loggeVersionManagerr, TimerContext
 from ..core.env import get_env
 from ..core.constants import *
 from ..data.read_write import NukeFileHandler
