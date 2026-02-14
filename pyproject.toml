@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nuke_core_utilities"
+version = "1.0.0"
+description = "Reusable Python utilities for Foundry Nuke to simplify development, scripting, and pipeline integration."
+readme = "README.md"
+requires-python = ">=3.10"
+
+authors = [
+    { name="Sumit S", email="sumitvjain@yahoo.com" }
+]
+
+dependencies = [
+    "PyYAML>=6.0"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

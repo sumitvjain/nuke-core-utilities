@@ -1,0 +1,14 @@
+include README.md
+include LICENSE
+include requirements.txt
+
+recursive-include src *.py
+recursive-include src *.yaml *.yml
+recursive-include src *.json
+recursive-include src *.ini
+recursive-include src *.cfg
+recursive-include src *.txt
+
+global-exclude *.pyc
+global-exclude __pycache__/*
+global-exclude *.pyo

@@ -2,19 +2,20 @@ from setuptools import find_packages, setup
 
 setup(
     name='nuke_core_utilities',
-    version='0.2.1',
+    version='1.0.0',
     description="Reusable Python utilities for Foundry Nuke to simplify development, scripting, and pipeline integration.",
 
     author='Sumit S',
     author_email='sumitvjain@yahoo.com',
+    
 
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
     install_requires=[
-        "PyYAML>=6.0", "typing==3.7.4.3"
+        "PyYAML>=6.0"
     ],
     python_requires=">=3.10",
-
+    include_package_data=True,
 )
 
 

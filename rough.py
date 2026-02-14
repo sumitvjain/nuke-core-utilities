@@ -12,5 +12,8 @@
 import sys
 sys.path.append(r"C:\\Program Files\\Nuke15.1v3\\lib\\site-packages")
 
-from nuke_core_utilities.project import ProjectContext
-from nuke_core_utilities.project import SumitClass
+from src.nuke_core_utilities.project import ProjectContext
+# from nuke_core_utilities.project import SumitClass
+
+
+print('ProjectContext ---- ', ProjectContext)

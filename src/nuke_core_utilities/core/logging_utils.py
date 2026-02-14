@@ -232,6 +232,11 @@ class JSONLogHandler(logging.Handler):
         except Exception:
             self.handleError(record)
 
+def get_loggeVersionManagerr():
+    pass
+    
+
+    
 
 class NukeLogger:
     """

@@ -16,6 +16,9 @@ from ..data.read_write import NukeFileHandler
 
 logger = get_logger(__name__)
 
+
+
+
 class VersionManager:
     """Version management for projects and files"""
     
@@ -444,3 +447,7 @@ def get_version_history(filepath: str = None) -> List[Dict[str, Any]]:
     """Helper function to get version history"""
     manager = VersionManager()
     return manager.get_version_history(filepath)
+
+
+def get_logger():
+    pass
