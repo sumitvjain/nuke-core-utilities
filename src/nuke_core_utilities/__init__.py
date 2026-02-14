@@ -4,7 +4,7 @@ Version: 1.0.0
 A comprehensive toolkit for Nuke pipeline development and automation
 """
 
-__version__ = "0.2.1"
+__version__ = "1.0.0"
 __author__ = "Nuke Pipeline Team"
 
 # Core modules

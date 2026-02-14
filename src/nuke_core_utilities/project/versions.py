@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Any
 import nuke
 
+from ..core.logging_utils import get_logger, TimerContext
 from ..core.logging_utils import get_loggeVersionManagerr, TimerContext
 from ..core.env import get_env
 from ..core.constants import *
@@ -448,6 +449,3 @@ def get_version_history(filepath: str = None) -> List[Dict[str, Any]]:
     manager = VersionManager()
     return manager.get_version_history(filepath)
 
-
-def get_logger():
-    pass
